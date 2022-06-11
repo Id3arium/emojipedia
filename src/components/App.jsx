@@ -8,8 +8,8 @@ function App() {
         <span>emojipedia</span>
       </h1>
       <dl className="dictionary">
-        {emojipedia.map((props) => {
-          return <Card key={props.id} {...props} />;
+        {emojipedia.map((props, idx) => {
+          return <Card key={idx} id={idx} {...props} />;
         })}
       </dl>
     </div>

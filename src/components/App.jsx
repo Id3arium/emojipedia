@@ -1,13 +1,14 @@
 import React from "react";
 import Card from "./Card";
+import emojipedia from "../emojipedia";
 function App() {
   return (
     <div>
       <h1>
         <span>emojipedia</span>
       </h1>
-      <Card key="1" {...props} />
       <dl className="dictionary">
+        <Card key="1" {...emojipedia[0]} />
         <div className="term">
           <dt>
             <span className="emoji" role="img" aria-label="Tense Biceps">
